@@ -13,6 +13,8 @@
 		41E637BC27DE47AC0012E3F0 /* WalkVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41E637BA27DE47AC0012E3F0 /* WalkVC.swift */; };
 		41E637BD27DE47AC0012E3F0 /* WalkVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 41E637BB27DE47AC0012E3F0 /* WalkVC.xib */; };
 		41E637CB27DE60AD0012E3F0 /* Modals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41E637CA27DE60AD0012E3F0 /* Modals.swift */; };
+		41E637CE27DE619A0012E3F0 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41E637CC27DE619A0012E3F0 /* LoginVC.swift */; };
+		41E637CF27DE619A0012E3F0 /* LoginVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 41E637CD27DE619A0012E3F0 /* LoginVC.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		41E637BA27DE47AC0012E3F0 /* WalkVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkVC.swift; sourceTree = "<group>"; };
 		41E637BB27DE47AC0012E3F0 /* WalkVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WalkVC.xib; sourceTree = "<group>"; };
 		41E637CA27DE60AD0012E3F0 /* Modals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Modals.swift; sourceTree = "<group>"; };
+		41E637CC27DE619A0012E3F0 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		41E637CD27DE619A0012E3F0 /* LoginVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginVC.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +75,7 @@
 			isa = PBXGroup;
 			children = (
 				41E637BA27DE47AC0012E3F0 /* WalkVC.swift */,
+				41E637CC27DE619A0012E3F0 /* LoginVC.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -79,6 +84,7 @@
 			isa = PBXGroup;
 			children = (
 				41E637BB27DE47AC0012E3F0 /* WalkVC.xib */,
+				41E637CD27DE619A0012E3F0 /* LoginVC.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -151,6 +157,7 @@
 			files = (
 				41E637B027DE46F70012E3F0 /* LaunchScreen.storyboard in Resources */,
 				41E637BD27DE47AC0012E3F0 /* WalkVC.xib in Resources */,
+				41E637CF27DE619A0012E3F0 /* LoginVC.xib in Resources */,
 				41E637AD27DE46F70012E3F0 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -164,6 +171,7 @@
 			files = (
 				41E637A427DE46F60012E3F0 /* AppDelegate.swift in Sources */,
 				41E637CB27DE60AD0012E3F0 /* Modals.swift in Sources */,
+				41E637CE27DE619A0012E3F0 /* LoginVC.swift in Sources */,
 				41E637BC27DE47AC0012E3F0 /* WalkVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

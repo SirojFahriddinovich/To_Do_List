@@ -14,4 +14,9 @@ class WalkVC: UIViewController {
 
     }
 
+    @IBAction func nextTapped(_ sender: UIButton) {
+        let vc = LoginVC.init(nibName: "LoginVC", bundle: nil)
+        self.present(vc, animated: true, completion: nil)
+    }
+    
 }

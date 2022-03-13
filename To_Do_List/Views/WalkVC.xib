@@ -33,6 +33,9 @@
                             <integer key="value" value="10"/>
                         </userDefinedRuntimeAttribute>
                     </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="nextTapped:" destination="-1" eventType="touchUpInside" id="qXT-Kc-hjB"/>
+                    </connections>
                 </button>
                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="xnj-1U-7tI">
                     <rect key="frame" x="16" y="243.5" width="382" height="409"/>
