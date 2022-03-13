@@ -12,6 +12,7 @@
 		41E637B027DE46F70012E3F0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41E637AE27DE46F70012E3F0 /* LaunchScreen.storyboard */; };
 		41E637BC27DE47AC0012E3F0 /* WalkVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41E637BA27DE47AC0012E3F0 /* WalkVC.swift */; };
 		41E637BD27DE47AC0012E3F0 /* WalkVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 41E637BB27DE47AC0012E3F0 /* WalkVC.xib */; };
+		41E637CB27DE60AD0012E3F0 /* Modals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41E637CA27DE60AD0012E3F0 /* Modals.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		41E637B127DE46F70012E3F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		41E637BA27DE47AC0012E3F0 /* WalkVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkVC.swift; sourceTree = "<group>"; };
 		41E637BB27DE47AC0012E3F0 /* WalkVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WalkVC.xib; sourceTree = "<group>"; };
+		41E637CA27DE60AD0012E3F0 /* Modals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Modals.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,7 +56,7 @@
 		41E637A227DE46F60012E3F0 /* To_Do_List */ = {
 			isa = PBXGroup;
 			children = (
-				41E637B927DE47650012E3F0 /* Modals */,
+				41E637C927DE609F0012E3F0 /* Modals */,
 				41E637B827DE475C0012E3F0 /* Views */,
 				41E637B727DE474E0012E3F0 /* Controllers */,
 				41E637A327DE46F60012E3F0 /* AppDelegate.swift */,
@@ -81,9 +83,10 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
-		41E637B927DE47650012E3F0 /* Modals */ = {
+		41E637C927DE609F0012E3F0 /* Modals */ = {
 			isa = PBXGroup;
 			children = (
+				41E637CA27DE60AD0012E3F0 /* Modals.swift */,
 			);
 			path = Modals;
 			sourceTree = "<group>";
@@ -160,6 +163,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				41E637A427DE46F60012E3F0 /* AppDelegate.swift in Sources */,
+				41E637CB27DE60AD0012E3F0 /* Modals.swift in Sources */,
 				41E637BC27DE47AC0012E3F0 /* WalkVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
