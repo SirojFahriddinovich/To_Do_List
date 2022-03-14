@@ -13,6 +13,7 @@
                 <outlet property="blurView" destination="8sL-i4-XSi" id="Zus-A0-3CV"/>
                 <outlet property="genderTF" destination="dkJ-Ta-ACZ" id="6mo-P1-UDc"/>
                 <outlet property="nameTF" destination="mHp-Ym-sVu" id="sFO-fN-DOc"/>
+                <outlet property="userImage" destination="Z2c-zI-ru4" id="YMn-Qc-CZT"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -151,6 +152,9 @@
                                                 <integer key="value" value="10"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="nextTapped:" destination="-1" eventType="touchUpInside" id="0mi-CE-Sp6"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -195,7 +199,7 @@
         </view>
         <tapGestureRecognizer id="cAh-o6-dVY">
             <connections>
-                <action selector="gesture:" destination="-1" id="xIb-zP-Gqj"/>
+                <action selector="getImage:" destination="-1" id="GeE-2v-Zod"/>
             </connections>
         </tapGestureRecognizer>
     </objects>
