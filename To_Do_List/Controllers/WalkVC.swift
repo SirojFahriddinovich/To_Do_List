@@ -14,4 +14,9 @@ class WalkVC: UIViewController {
 
     }
 
+    @IBAction func startTap(_ sender: Any) {
+        let vc = TasksVC.init(nibName: "TasksVC", bundle: nil)
+        vc.modalPresentationStyle = .fullScreen
+        self.present(vc, animated: true)
+    }
 }
