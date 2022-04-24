@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		414B98E72815D6E000A959E6 /* Tabbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414B98E62815D6E000A959E6 /* Tabbar.swift */; };
+		414B98E92815DDF900A959E6 /* Tabbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414B98E82815DDF900A959E6 /* Tabbar.swift */; };
 		41C4C2952815BAC5009DCAC9 /* DoneTaskTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41C4C2932815BAC5009DCAC9 /* DoneTaskTVC.swift */; };
 		41C4C2962815BAC5009DCAC9 /* DoneTaskTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 41C4C2942815BAC5009DCAC9 /* DoneTaskTVC.xib */; };
 		41C4C2992815C3AD009DCAC9 /* AddTaskVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41C4C2972815C3AD009DCAC9 /* AddTaskVC.swift */; };
@@ -25,7 +25,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		414B98E62815D6E000A959E6 /* Tabbar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tabbar.swift; sourceTree = "<group>"; };
+		414B98E82815DDF900A959E6 /* Tabbar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tabbar.swift; sourceTree = "<group>"; };
 		41C4C2932815BAC5009DCAC9 /* DoneTaskTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoneTaskTVC.swift; sourceTree = "<group>"; };
 		41C4C2942815BAC5009DCAC9 /* DoneTaskTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DoneTaskTVC.xib; sourceTree = "<group>"; };
 		41C4C2972815C3AD009DCAC9 /* AddTaskVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTaskVC.swift; sourceTree = "<group>"; };
@@ -93,7 +93,6 @@
 				41E637AC27DE46F70012E3F0 /* Assets.xcassets */,
 				41E637AE27DE46F70012E3F0 /* LaunchScreen.storyboard */,
 				41E637B127DE46F70012E3F0 /* Info.plist */,
-				414B98E62815D6E000A959E6 /* Tabbar.swift */,
 			);
 			path = To_Do_List;
 			sourceTree = "<group>";
@@ -104,6 +103,7 @@
 				41E637BA27DE47AC0012E3F0 /* WalkVC.swift */,
 				41D3D7BA2815AD170082BFB1 /* TasksVC.swift */,
 				41C4C2972815C3AD009DCAC9 /* AddTaskVC.swift */,
+				414B98E82815DDF900A959E6 /* Tabbar.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -204,7 +204,7 @@
 				41C4C2952815BAC5009DCAC9 /* DoneTaskTVC.swift in Sources */,
 				41E637A427DE46F60012E3F0 /* AppDelegate.swift in Sources */,
 				41C4C2992815C3AD009DCAC9 /* AddTaskVC.swift in Sources */,
-				414B98E72815D6E000A959E6 /* Tabbar.swift in Sources */,
+				414B98E92815DDF900A959E6 /* Tabbar.swift in Sources */,
 				41D3D7C12815B3F40082BFB1 /* TaskTVC.swift in Sources */,
 				41E637CB27DE60AD0012E3F0 /* Modals.swift in Sources */,
 				41E637BC27DE47AC0012E3F0 /* WalkVC.swift in Sources */,
