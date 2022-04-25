@@ -44,6 +44,9 @@
                                                 <state key="normal" title="Button" image="checkmark.circle.fill" catalog="system">
                                                     <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="26"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="doneTap:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="FBs-fh-vMq"/>
+                                                </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="253" verticalHuggingPriority="253" horizontalCompressionResistancePriority="752" verticalCompressionResistancePriority="752" text="8:00 pm" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ilC-yF-oql">
                                                 <rect key="frame" x="45" y="0.0" width="44" height="50"/>
@@ -92,6 +95,9 @@
                                         <state key="normal" title="Button" image="bell.fill" catalog="system">
                                             <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="25"/>
                                         </state>
+                                        <connections>
+                                            <action selector="notifTap:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="aKS-zn-huk"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -125,6 +131,10 @@
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <connections>
                 <outlet property="bacView" destination="hjk-7P-R4T" id="Nbh-dJ-g1d"/>
+                <outlet property="dateLbl" destination="ilC-yF-oql" id="Mt6-4A-szu"/>
+                <outlet property="notifBtn" destination="fet-pg-m3T" id="TI3-1O-rC0"/>
+                <outlet property="prioretyView" destination="FFp-cU-776" id="m3Z-t7-m5x"/>
+                <outlet property="titleLbl" destination="mq3-7D-H5Y" id="dkY-QB-nGd"/>
             </connections>
             <point key="canvasLocation" x="84.057971014492765" y="108.48214285714285"/>
         </tableViewCell>

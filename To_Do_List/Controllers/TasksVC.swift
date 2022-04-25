@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import RealmSwift
 
 class TasksVC: UIViewController {
 
@@ -21,9 +22,15 @@ class TasksVC: UIViewController {
         }
     }
     
+    var realm = try! Realm()
+    var tasks = [TaskDM]()
+    var doneTasks = [TaskDM]()
+    var unDoneTasks = [TaskDM]()
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        fetchTasks()
     }
     
     @IBAction func xTap(_ sender: Any) {
@@ -36,14 +43,21 @@ class TasksVC: UIViewController {
     
     
     @IBAction func addTap(_ sender: Any) {
+
         let vc = AddTaskVC.init(nibName: "AddTaskVC", bundle: nil)
+        vc.addNew = { task in
+            self.tasks.append(task)
+            self.saveTask(task: task)
+        }
+        fetchTasks()
+        self.tableView.reloadData()
         vc.modalPresentationStyle = .overFullScreen
         self.present(vc, animated: true)
     }
     
 }
 
-
+//MARK:  - TABLEVIEW
 extension TasksVC : UITableViewDelegate, UITableViewDataSource {
     
     func numberOfSections(in tableView: UITableView) -> Int {
@@ -52,22 +66,20 @@ extension TasksVC : UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         if section == 0 {
-            return 3
+            return  self.tasks.count
         } else {
-            return 2
+            return self.tasks.count
         }
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if indexPath.section == 0 {
             let cell = tableView.dequeueReusableCell(withIdentifier: "TaskTVC", for: indexPath) as! TaskTVC
-            cell.updateCell(index: indexPath.row)
-            cell.animateCell()
+            cell.updateCell(task: self.tasks[indexPath.row], index: indexPath.row)
             return cell
         } else {
             let cell = tableView.dequeueReusableCell(withIdentifier: "DoneTaskTVC", for: indexPath) as! DoneTaskTVC
-            cell.updateCell(index: indexPath.row)
-            cell.animateCell()
+            cell.updateCell(task: self.tasks[indexPath.row], index: indexPath.row)
             return cell
         }
     }
@@ -83,6 +95,11 @@ extension TasksVC : UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
         
         let remove = UIContextualAction(style: .normal, title: "delete") { _, _, _ in
+            if indexPath.section == 0 {
+                self.deleteTask(task: self.tasks[indexPath.row])
+            } else {
+                self.deleteTask(task: self.tasks[indexPath.row])
+            }
             print("Deleted")
         }
         
@@ -90,8 +107,40 @@ extension TasksVC : UITableViewDelegate, UITableViewDataSource {
         remove.backgroundColor = .white
         
         let configuration = UISwipeActionsConfiguration(actions: [remove])
-        
         return configuration
     }
     
+}
+
+
+//MARK: REALM METHODS
+extension TasksVC {
+    
+    ///Save the task to realm
+    func saveTask(task : TaskDM) {
+       try! self.realm.write {
+           self.realm.add(task)
+        }
+    }
+    
+    ///Get tasks from realm
+    func fetchTasks() {
+        self.tasks = realm.objects(TaskDM.self).compactMap{$0}
+        tableView.reloadData()
+    }
+    
+    ///Delete task from realim
+    func deleteTask(task : TaskDM) {
+        for i in self.tasks.enumerated() {
+            if task == i.element {
+               try! realm.write {
+                    realm.delete(self.tasks[i.offset])
+                    tasks.remove(at: i.offset)
+                    tableView.reloadData()
+                }
+            }
+        }
+    }
+
+
 }

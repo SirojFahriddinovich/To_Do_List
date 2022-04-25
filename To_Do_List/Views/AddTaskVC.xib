@@ -11,6 +11,9 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AddTaskVC" customModule="To_Do_List" customModuleProvider="target">
             <connections>
                 <outlet property="cor" destination="kX4-TB-d6r" id="N8S-wk-lbS"/>
+                <outlet property="dateTxtFld" destination="Pjo-VG-nR5" id="35o-Fq-3PU"/>
+                <outlet property="errorLbl" destination="oxi-8U-8J2" id="GBf-rh-Xs6"/>
+                <outlet property="titTxtFld" destination="7Zf-df-7fn" id="Oxi-Fh-9dH"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
                 <outletCollection property="PrioretyBtns" destination="0Ez-Th-TJh" collectionClass="NSMutableArray" id="9in-fv-0Yc"/>
                 <outletCollection property="PrioretyBtns" destination="ua4-MC-DwF" collectionClass="NSMutableArray" id="SRQ-TH-AQ3"/>
@@ -224,20 +227,32 @@
                                                             <integer key="value" value="12"/>
                                                         </userDefinedRuntimeAttribute>
                                                     </userDefinedRuntimeAttributes>
+                                                    <connections>
+                                                        <action selector="addTap:" destination="-1" eventType="touchUpInside" id="u0t-DV-Pba"/>
+                                                    </connections>
                                                 </button>
                                             </subviews>
                                         </stackView>
                                     </subviews>
                                 </stackView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please fill in the title and date field !!!!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oxi-8U-8J2">
+                                    <rect key="frame" x="432.5" y="444" width="346.5" height="27"/>
+                                    <fontDescription key="fontDescription" name="NotoSansKannada-Regular" family="Noto Sans Kannada" pointSize="20"/>
+                                    <color key="textColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
                             </subviews>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <constraints>
+                                <constraint firstItem="oxi-8U-8J2" firstAttribute="width" secondItem="2SP-kv-69X" secondAttribute="width" multiplier="0.9" id="8xg-nT-zNc"/>
                                 <constraint firstItem="rl1-2U-VCL" firstAttribute="centerX" secondItem="kX4-TB-d6r" secondAttribute="centerX" id="Ai6-CE-WSh"/>
                                 <constraint firstItem="CeE-Q4-Fbt" firstAttribute="centerX" secondItem="kX4-TB-d6r" secondAttribute="centerX" id="C4j-K7-1XV"/>
                                 <constraint firstItem="CeE-Q4-Fbt" firstAttribute="top" secondItem="kX4-TB-d6r" secondAttribute="top" constant="-40" id="HAs-CH-T0B"/>
+                                <constraint firstItem="oxi-8U-8J2" firstAttribute="top" secondItem="rl1-2U-VCL" secondAttribute="bottom" constant="12" id="Jm5-MC-NXY"/>
                                 <constraint firstItem="fGw-5M-gt5" firstAttribute="centerX" secondItem="kX4-TB-d6r" secondAttribute="centerX" id="f2M-Td-1g3"/>
                                 <constraint firstAttribute="width" secondItem="kX4-TB-d6r" secondAttribute="height" id="g5C-B6-BNZ"/>
+                                <constraint firstItem="oxi-8U-8J2" firstAttribute="leading" secondItem="2SP-kv-69X" secondAttribute="leading" id="oPk-q2-kIp"/>
                                 <constraint firstItem="fGw-5M-gt5" firstAttribute="top" secondItem="kX4-TB-d6r" secondAttribute="top" constant="-30" id="wmR-Ll-Lnm"/>
                                 <constraint firstItem="rl1-2U-VCL" firstAttribute="top" secondItem="CeE-Q4-Fbt" secondAttribute="bottom" constant="15" id="yrx-PN-CYb"/>
                             </constraints>
